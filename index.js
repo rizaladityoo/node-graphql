@@ -3,7 +3,7 @@ const { graphqlHTTP } = require('express-graphql')
 const schema = require('./Schemas/index.js')
 const cors = require('cors')
 const mongoose = require("mongoose")
-const url = "mongodb+srv://rizaladityoo:likeshit@cluster0.lrfoj.mongodb.net/node_graphql?retryWrites=true&w=majority"
+const url = "mongodb+srv://rizaladityoo:*******@cluster0.lrfoj.mongodb.net/node_graphql?retryWrites=true&w=majority"
 mongoose.connect(url, {useNewUrlParser: true, useUnifiedTopology:true})
     .then(() => console.log('connected to db'))
     .catch((err) => console.log(err))
